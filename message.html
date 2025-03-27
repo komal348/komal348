@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            overflow: hidden;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        .birthday-message {
+            position: absolute;
+            top: calc(50% - 50px);
+            font-size: 40px;
+            text-shadow: 2px 2px 5px white;
+            color: #eee;
+            animation: rainbow 2s linear infinite;
+        }
+
+        @keyframes rainbow {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85% { color: violet; }
+            100% { color: red; }
+        }
+    </style>
+</head>
+<body>
+    <div class="birthday-message">HAPPY BIRTHDAY 🎉</div>
+</body>
+</html>
